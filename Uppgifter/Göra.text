@@ -1,0 +1,50 @@
+VÅRA UPPGIFTER:
+
+Uppgift1: Startsida med nyheter angående lanet "precis som xodia och dreamhack har " (S/A)
+
+Uppgift2: Sida för bokning av platser (S)
+
+Uppgift3: Sida för Info, typ FaQ om vad man ska ha med och saker för föräldrar (A)
+
+Uppgift4: Sida för turneringar och info om dom (A)
+
+Uppgift5: Sida fotoalbum för dom gamla lanen så folk kan se hur det ser ut där inne (A)
+
+Uppgift6: Sida för sponsorer(bara kasta in lite fake ifall vi inte kan använda någora störres lol) (A)
+
+Uppgift7: Sida för kontakt (formulär) (A)
+
+Uppgift8: Om tid räcker till: Sida för forum (S)
+
+
+
+KRAV:
+
+ Ni ska arbeta utifrån principen "Mobile First". 
+Alltså ska webbplatsen först och främst skapas för mobila enheter i åtanke för att sedan skalas upp att även fungera på enheter med större skärmar.
+Detta arbetssätt blir alltså det motsatta mot hur ni arbetat på laborationerna.
+
+ Projektet bör innehålla minst 5-6 olika sidor eller delsidor.
+
+ På webbsajten ska det någonstans finnas ett men gärna fler formulär.
+
+ Bilder som enbart används för sidans layout ska läsas in via CSS.
+
+ Då stilmallar är avaktiverade ska sidan ändå presenteras på ett enkelt och bra sätt. Menyer ska vara lätta att hitta med mera.
+
+ Sidor som kan vara aktuella att skriva ut ska ha en separat genomarbetad stilmall för ändamålet.
+
+ Tabeller ska enbart användas för att presentera tabelldata, inte för att styra layouten!
+
+ Ni ska lägga tonvikt vid att göra en "snygg" hemsida. Vi förväntar oss inga underverk men ni ska kunna försvara er layout och stå för den.
+
+ Koden ska vara snyggt skriven, välindenterad och kommenterad där det behövs.
+
+ Sidan ska ha en responsiv layout. Sidans layout ska alltså anpassa sig efter bredden på webbläsaren/enheten.
+
+ ALLA sidor ska följa och valideras enligt HTML5. Avsteg från detta ska kunna motiveras
+
+ Formuläret ska valideras dynamiskt med hjälp av biblioteket jQuery enligt Laboration 4.2
+
+ En egen, väluttänkt dynamisk funktion ska implementeras med biblioteket jQuery. 
+Det kan vara allt från att menyn expanderar till att man tas till toppen från botten på en ”smooth” vis.
