@@ -53,23 +53,69 @@ table {
 /*header*/
 
 #header{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position:center;
 	background-image:url(../pics/xodiastor.jpg);
 	background-size:contain;
+	height:70px;
+	background-repeat:no-repeat;
+	text-align:center;
 }
 
 /*header*/
 
 
+
 /*navigation*/
 #navigation{
 	text-align:center;
+
 }
-#navigation li{
-	margin-bottom:5px;
-	background-color:orange;
+#navigation ul{
+	text-align:center;
+
 }
-#navigation li{
-	
+#navigation li li{
+
 }
 
-/*navigation*/
+#navigation li li{
+		border:1px solid black;
+		background-color:#E16C59;
+		text-decoration:none;
+		color:black;
+		display:inline-block;
+		width:auto;
+		border-radius:10px;
+		margin-left: auto;
+    	margin-right: auto;
+}
+
+#navigation a{
+	    min-width:80px;
+		text-decoration:none;
+		color:black;
+		width:auto;
+		height:20px;
+		display:block;
+		font-size:100%;
+		padding:8px;
+}
+
+#navigationrow1{
+	display: block;
+	width:100%;
+	margin-bottom:3px;
+
+
+}
+#navigationrow2{
+	display: block;
+	width:100%;
+
+
+}
+
+/*navigation*

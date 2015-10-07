@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,28 +92,191 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* End of "Css reset" */
 
+#container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: auto;
+	max-width: 960px;
+	background-color: rgba(50, 71, 89, 0.1);
+	overflow: hidden;
+}
+
+#header {
+	background-position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../pics/xodiastor.jpg);
+	background-color: white;
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+#navigation {
+	display: block;
+	text-align: center;
+}
+
+#navigation ul {
+	display: block;
+	width: auto;
+	margin-bottom: 3px;
+	margin-top: 5px;
+}
+
+#navigation li li {
+	margin: 5px;
+	border: 1px solid black;
+	background-color: #E16C59;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	width: auto;
+	border-radius: 15px;
+	box-shadow: 5px 4px 5px black;
+}
+
+#navigation li a {
+	min-width: 100px;
+	text-decoration: none;
+	color: black;
+	width: auto;
+	height: 20px;
+	display: block;
+	font-size: 150%;
+	padding: 15px;
+}
+
+#navigationrow1 {
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+}
+
+#navigationrow2 {
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+}
+
+.gamesHeader {
+	font-size: 60px;
+}
+
+.gamesRow1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 0px 0px 0px 80px;
+}
+
+.gamesRow2 {
+	font-size: 30px;
+	text-align: left;
+	padding: 0px 0px 0px 80px;
+}
+
+.gamesRow3 {
+	font-size: 30px;
+	text-align: left;
+	padding: 0px 0px 0px 80px;
+}
+
+.gamesRow4 {
+	font-size: 30px;
+	text-align: left;
+	padding: 0px 0px 0px 80px;
+}
+
+#starcraftbild {
+	background-image: url("../pics/starcraft.jpg");
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
+
+#csgobild {
+	background-image: url("../pics/csgo.jpg");
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
+
+#dotabild {
+	background-image: url("../pics/dota.jpg");
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
+
+#hearthstonebild {
+	background-image: url("../pics/Hearthstone-logo.png");
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
