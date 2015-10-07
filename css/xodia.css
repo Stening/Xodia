@@ -209,6 +209,10 @@ table {
 	margin: 0px;
 }
 
+#content {
+	overflow: hidden;
+}
+
 .gamesHeader {
 	font-size: 60px;
 }
@@ -238,45 +242,61 @@ table {
 }
 
 #starcraftbild {
-	background-image: url("../pics/starcraft.jpg");
-	min-height: 300px;
-	width: 100%;
+	background-image: url("../pics/sc2.jpg");
+	min-height: 270px;
+	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
 	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
 }
 
 #csgobild {
-	background-image: url("../pics/csgo.jpg");
-	min-height: 300px;
-	width: 100%;
+	background-image: url("../pics/csgokee.jpg");
+	min-height: 270px;
+	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
 	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
 }
 
 #dotabild {
-	background-image: url("../pics/dota.jpg");
-	min-height: 300px;
-	width: 100%;
+	background-image: url("../pics/dota2.jpg");
+	min-height: 270px;
+	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
 	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
 }
 
 #hearthstonebild {
-	background-image: url("../pics/Hearthstone-logo.png");
-	min-height: 300px;
-	width: 100%;
+	background-image: url("../pics/hs.jpg");
+	min-height: 270px;
+	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
 	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
+}
+
+.gamesUl {
+	margin: 10px;
+}
+
+.divoverflow {
+	overflow: hidden;
 }
