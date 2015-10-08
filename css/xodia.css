@@ -296,3 +296,8 @@ table {
 .divoverflow li {
 	display:inline-block;
 }
+
+
+#map {
+	border:1px solid black;
+}
