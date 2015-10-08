@@ -298,6 +298,16 @@ table {
 }
 
 
+
 #map {
 	border:1px solid black;
+	
+}
+
+.galleribilder {
+	width: 40%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
 }
