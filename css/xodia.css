@@ -240,10 +240,17 @@ table {
 	text-align: left;
 	padding: 0px 0px 0px 80px;
 }
-
-#starcraftbild {
-	background-image: url("../pics/sc2.jpg");
-	min-height: 270px;
+#starcraftbilden {
+ width: 50%;
+ background-size: contain;
+ background-repeat: no-repeat;
+ text-align: center;
+ margin: 10px;
+ float: left;
+ border-radius: 80px;
+ border: 14px solid gray;
+}
+#csgokee {
 	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -254,9 +261,7 @@ table {
 	border: 14px solid gray;
 }
 
-#csgobild {
-	background-image: url("../pics/csgokee.jpg");
-	min-height: 270px;
+#dota2bilden {
 	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -267,22 +272,7 @@ table {
 	border: 14px solid gray;
 }
 
-#dotabild {
-	background-image: url("../pics/dota2.jpg");
-	min-height: 270px;
-	width: 50%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 10px;
-	float: left;
-	border-radius: 80px;
-	border: 14px solid gray;
-}
-
-#hearthstonebild {
-	background-image: url("../pics/hs.jpg");
-	min-height: 270px;
+#hearthstonebilden {
 	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -295,8 +285,14 @@ table {
 
 .gamesUl {
 	margin: 10px;
+	
 }
 
 .divoverflow {
 	overflow: hidden;
+	
+	
+}
+.divoverflow li {
+	display:inline-block;
 }
