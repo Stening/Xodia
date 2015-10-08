@@ -296,3 +296,11 @@ table {
 .divoverflow li {
 	display:inline-block;
 }
+.galleribilder {
+	width: 40%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	
+}
