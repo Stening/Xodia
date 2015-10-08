@@ -1,17 +1,18 @@
 var map = document.getElementById("map");
-var cords = [];
-var boxcords = [];
 var boxnumberid = 1;
 var boxes = {};
+var canvasX = 0;
+var canvasY = 0;
+var clicked = false;
 window.onload = function() {
     function generateseatrow(xstart, ystart, numberofseats) {
         for (var i = 0; i < numberofseats; i++) {
             var box = map.getContext("2d");
-            boxes["box" + boxnumberid] = [xstart, ystart, xstart + 30, ystart + 30, boxnumberid];
+            boxes[boxnumberid] = [[xstart, ystart], [xstart + 30, ystart],[xstart + 30, ystart + 30], [xstart, ystart + 30], boxnumberid];
             box.beginPath();
             box.fillStyle = "black";
             box.rect(xstart, ystart, 30, 30);
-            box.lineWidth = 3;
+            box.lineWidth = 2;
             box.strokeStyle = 'black';
             box.font = "14pt Arial";
             box.fillText(boxnumberid, xstart + 5, ystart + 20);
@@ -29,21 +30,29 @@ window.onload = function() {
     
     
     console.log(boxes);
-    
-    
-    
-    
+    //here i check where the mouse is on the canvas and what seat is selected
     map.addEventListener("mousedown", function(e){
         var totalOffsetX = 0;
         var totalOffsetY = 0;
-        var canvasX = 0;
-        var canvasY = 0;
         totalOffsetX += map.offsetLeft - map.scrollLeft;
         totalOffsetY += map.offsetTop - map.scrollTop;
         canvasX = e.pageX - totalOffsetX;
         canvasY = e.pageY - totalOffsetY;
         console.log(canvasX, ", ", canvasY);
+        console.log(Object.keys(boxes).length);
         
+        for(var i=1; i<Object.keys(boxes).length + 1; i++){
+            if(clicked===false){
+            if(canvasX > boxes[i][0][0] && canvasX < boxes[i][1][0] && canvasX < boxes[i][2][0] && canvasX > boxes[i][3][0] && canvasY > boxes[i][0][1] && canvasY > boxes[i][1][1] && canvasY < boxes[i][2][1] && canvasY < boxes[i][3][1]){
+                alert("you clicked box number: " + boxes[i][4]);
+                clicked = true;
+            }
+            else{
+                console.log("you did not click on a box!");
+            }
+        }
+        }
+        clicked = false;
     });
     
     
