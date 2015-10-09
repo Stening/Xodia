@@ -240,16 +240,18 @@ table {
 	text-align: left;
 	padding: 0px 0px 0px 80px;
 }
+
 #starcraftbilden {
- width: 50%;
- background-size: contain;
- background-repeat: no-repeat;
- text-align: center;
- margin: 10px;
- float: left;
- border-radius: 80px;
- border: 14px solid gray;
+	width: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
 }
+
 #csgokee {
 	width: 50%;
 	background-size: contain;
@@ -285,22 +287,40 @@ table {
 
 .gamesUl {
 	margin: 10px;
-	
 }
 
 .divoverflow {
 	overflow: hidden;
-	
-	
 }
+
 .divoverflow li {
-	display:inline-block;
+	display: inline-block;
 }
+
 .galleribilder {
 	width: 40%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	
+}
+
+#bilder {
+	background-image: url(../pics/csgo.jpg);
+	width: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	float: left;
+	border-radius: 80px;
+	border: 14px solid gray;
+}
+
+.gallerixodia1 {
+	width: 30%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
 }
