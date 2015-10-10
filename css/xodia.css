@@ -305,22 +305,8 @@ table {
 	margin: 10px;
 }
 
-#bilder {
-	background-image: url(../pics/csgo.jpg);
-	width: 50%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 10px;
-	float: left;
-	border-radius: 80px;
-	border: 14px solid gray;
-}
-
 .gallerixodia1 {
 	width: 30%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
 	margin: 10px;
+
 }
