@@ -297,6 +297,16 @@ table {
 	display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
+
+
+#map {
+	border:1px solid black;
+	
+}
+
+>>>>>>> f8824a31a426e55b4c264819cbb2748432150649
 .galleribilder {
 	width: 40%;
 	background-size: contain;
@@ -304,9 +314,12 @@ table {
 	text-align: center;
 	margin: 10px;
 }
+<<<<<<< HEAD
 
 .gallerixodia1 {
 	width: 30%;
 	margin: 10px;
 
 }
+=======
+>>>>>>> f8824a31a426e55b4c264819cbb2748432150649
