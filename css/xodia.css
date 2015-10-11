@@ -137,6 +137,19 @@ table {
 	border-spacing: 0;
 }
 
+
+@font-face{
+	font-family: 'hammersmith';
+  	src: url('fonts/HammersmithOne-Regular.ttf');
+}
+@font-face{
+	font-family: 'passionone';
+  	src: url('fonts/PassionOne-Regular.ttf');
+}
+
+
+
+
 #container {
 	display: block;
 	margin-left: auto;
@@ -163,8 +176,10 @@ table {
 }
 
 #navigation {
+	font-family:"passionone";
 	display: block;
 	text-align: center;
+	font-size:120%;
 }
 
 #navigation ul {
@@ -191,7 +206,6 @@ table {
 	text-decoration: none;
 	color: black;
 	width: auto;
-	height: 20px;
 	display: block;
 	font-size: 150%;
 	padding: 15px;
@@ -298,10 +312,11 @@ table {
 }
 
 
-
+a{
+	
+}
 #map {
 	border:1px solid black;
-	
 }
 
 
@@ -316,5 +331,16 @@ table {
 .gallerixodia1 {
 	width: 30%;
 	margin: 10px;
+}
 
+form span{
+	display:inline;
+	font-family:"hammersmith";
+}
+
+form input{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
 }

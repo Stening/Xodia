@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width:481px)" href="../css/xodia.css" />
     <link rel="stylesheet" type="text/css" media="only screen and (max-width:480px)" href="../css/mobilanpassning.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -21,62 +20,46 @@
                 <li id="navigationrow1">
                     <ul>
                         <li> <a href="startsida.html">Startsida</a> </li>
-                        <li> <a href="bokning.html">Bokning</a> </li>
+                        <li> <a href="bokning.html">Platsöversikt</a> </li>
                         <li> <a href="faq.html">FAQ</a> </li>
                     </ul>
                 </li>
                 <li id="navigationrow2">
                     <ul>
-                        <li> <a href="galleri.html">Galleri</a> </li>
-                        <li> <a href="kontakt.html">Kontakt</a> </li>
-                        <li> <a href="turnering.html">Turnering</a> </li>
+                        <li> <a href="galleri.html">Galleri</a></li>
+                        <li> <a href="kontakt.html">Kontakt</a></li>
+                        <li> <a href="turnering.html">Turneringar</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div id="content">
             <h1 class="gamesHeader">Kontakt</h1>
+            <form action="POST">
             <fieldset>
-                <legend>Skriv in lite info om dig själv</legend>
+                <legend align="center">Information om dig</legend>
                 <p>
-                    <label>Vilken stad gillar du mest?</label>
-                    <select name="errand">
-                        <option value="Göteborg">Göteborg</option>
-                        <option value="Stockholm" selected>Stockholm</option>
-                        <option value="Karlskrona">Karlskrona</option>
-                    </select>
+                    <span>Email:</span>
+                    <input type="email" placeholder="example@mail.com"/>
+                </p>
+                <span>Ålder:</span>
+                <input type="text"/>
+                <p>
+                <span>Förnamn:</span>
+                <input name="title" id="förnamn" type="text"/>
                 </p>
                 <p>
-                    <label>Vad är din email?</label>
-                    <input type="email" placeholder="foo@bar.com" />
+                <span>Efternamn:</span>
+                <input name="title" id="efternamn" type="text"/>
                 </p>
-                <label>Vad är din ålder?</label>
-                <input type="number" min="1" max="150" />
-                <p>Förnamn:</p>
-                <input name="title" id="fornamn" type="text" />
             </fieldset>
-            <fieldset>
-                <legend>Vilken är din favorit färg?</legend>
-                <p>
-                    <input type="radio" name="question" value="Blå">Blå </p>
-                <p>
-                    <input type="radio" name="question" value="Röd">Röd </p>
-                <p>
-                    <input type="radio" name="question" value="Gul">Gul </p>
-                <p>
-                    <input type="radio" name="question" value="Orange">Orange </p>
-            </fieldset>
-            <fieldset>
-                <legend>Email eller telefon?</legend>
-                <input type="checkbox" name="contact[]" value="number">telefonnummer
-                <input type="checkbox" name="contact[]" value="email">email
-            </fieldset>
-            <button type="submit">Skicka!</button>
+            </form>
+            <button id="continuebutton">Fortsätt</button>
         </div>
         <div id="footer">
-
         </div>
         <script src="../script/jquery.js"></script>
+        <script src="../script/validering.js"></script>
     </div>
 </body>
 
