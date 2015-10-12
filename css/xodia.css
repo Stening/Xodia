@@ -89,7 +89,6 @@ video {
 	padding: 0;
 	border: 0;
 	font-size: 16px;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -242,71 +241,53 @@ table {
 }
 
 #starcraftbilden {
-	width: 50%;
+	width: 65%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	float: left;
 	border-radius: 80px;
 	border: 14px solid gray;
 }
 
-#csgokee {
-	width: 50%;
+#csgobilden {
+	width: 65%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	float: left;
 	border-radius: 80px;
 	border: 14px solid gray;
 }
 
 #dota2bilden {
-	width: 50%;
+	width: 65%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	float: left;
 	border-radius: 80px;
 	border: 14px solid gray;
 }
 
 #hearthstonebilden {
-	width: 50%;
+	width: 65%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	float: left;
 	border-radius: 80px;
 	border: 14px solid gray;
-}
-
-.gamesUl {
-	margin: 10px;
 }
 
 .divoverflow {
 	overflow: hidden;
 }
 
-.divoverflow li {
-	display: inline-block;
-}
-
-<<<<<<< HEAD
-=======
-
-
 #map {
-	border:1px solid black;
-	
+	border: 1px solid black;
 }
 
->>>>>>> f8824a31a426e55b4c264819cbb2748432150649
 .galleribilder {
 	width: 40%;
 	background-size: contain;
@@ -314,12 +295,16 @@ table {
 	text-align: center;
 	margin: 10px;
 }
-<<<<<<< HEAD
 
 .gallerixodia1 {
 	width: 30%;
 	margin: 10px;
-
 }
-=======
->>>>>>> f8824a31a426e55b4c264819cbb2748432150649
+
+#faqtext {
+	text-align: center;
+	line-height: 2;
+}
+.gamesUl p {
+	margin:5px 0px 20px 0px;
+}
