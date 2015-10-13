@@ -23,7 +23,14 @@
                 </li>
                 <li id="navigationrow2">
                     <ul>
-                    <li> <a href="galleri.html">Galleri</a> </li>
+                    <li id="gallerimenu"> <a id="galleributton" href="galleri.html">Galleri</a>
+                            <div id="dropdownmenu">
+                                <a class="slidedownbutton" href="gallerixodia1.html">Xodia 1</a>
+                                <a class="slidedownbutton" href="gallerixodia2.html">Xodia 2</a>
+                                <a class="slidedownbutton" href="gallerixodia3.html">Xodia 3</a>
+                                <a class="slidedownbutton" href="gallerixodia4.html">Xodia 4</a>
+                            </div>
+                        </li>
                     <li> <a href="kontakt.html">Kontakt</a> </li>
                     <li> <a href="turnering.html">Turneringar</a> </li>
                     </ul>
@@ -32,11 +39,26 @@
         </div>
         <div id="newsfeed"></div>
         <div id="content">
-            <h1 class="gamesHeader">Startsida</h1>
-            
+            <h1 class="gamesHeader">Välkommen till Xodia</h1>
+            <div id="startsidatext">
+                <h2>Nytt på Xodia</h2>
+                <h3>Xodia byter eventuellt lokal till 2016!</h3>
+                <p>Till Xodia 2016 har det pratats om att flytta lanet till gamla faurecia's lokaler i torsås.</p>
+                <p>Detta är på grund av att Xodia växer hela tiden, och för att kompensera måsste vi ha större lokaler med mer utrymme.</p>
+                <p>Mer info om detta kommer och adress till ny lokal kommer 2016.</p>
+                <h3>Nya turneringar!</h3>
+                <p>Tidigare turneringar har varit i spelen: Startcraft 2, Counter-Strike Global Offensive och Hearthstone</p>
+                <p>Men nu kommer ett till spel till listan: Dota 2!</p>
+                <p>Vi kommer också att byta till en hemsida som Hostar turneringar, med livestatus visualliserat med brackets</p>
+                <p id="bracketdesc">Här är ett exempel på hur brackets ser ut i turneringarna</p>
+                <div id="bracketsimg"></div>
+                <img id="bracketsimg" src="../pics/challonge.png" alt="exempel på brackets" />
+                
+            </div>
         </div>
         <script src="../script/jquery.js"></script>
         <script src="../script/startsida.js"></script>
+        <script src="../script/slidemenu.js"></script>
         <div id="footer">
         </div>
     </div>
