@@ -1,3 +1,4 @@
+$(document).ready( function(){
 var map = document.getElementById("map");
 var resetCookie = document.getElementById("resetstorage");
 var updateSeats = document.getElementById("updateseats");
@@ -10,7 +11,7 @@ var seatInfoStorage;
 var redBoxMade = false;
 var takenToggle = false;
 
-window.onload = function() {
+
 
 
     function appendToStorage(name, newData) {
@@ -175,4 +176,4 @@ window.onload = function() {
         }
         clicked = false;
     });
-};
+});

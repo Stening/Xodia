@@ -344,3 +344,29 @@ form input{
 	margin-right:auto;
 	margin-bottom:10px;
 }
+
+
+/*dropdown menu*/
+#dropdownmenu{
+	display:none;
+	line-height:0;
+	position:absolute;
+	background-color: #E16C59;
+	border-radius: 15px;
+	box-shadow: 5px 4px 5px black;
+	border:1px solid black;
+	transition: background-color 1s;
+}
+#dropdownmenu a{
+	transition: background-color 1s;
+	background-color: #E16C59;
+	border-radius: 15px;
+}
+
+
+#dropdownmenu a:hover{
+	transition: background-color 1s;
+	background-color: #FF9C80;
+	border-radius: 15px;
+}
+/*dropdown menu*/
