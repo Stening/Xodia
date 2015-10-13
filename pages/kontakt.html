@@ -49,33 +49,52 @@
                     <div class="inputMindre">
                         <span>Email:</span>
                         <input id="emailBox" type="email" placeholder="example@mail.com" />
-                        <div id="fontBildEmail"></div> 
+                        <div id="fontBildEmail"></div>
                     </div>
                     <div class="inputMindre">
                         <span>Ålder:</span>
                         <input id="ageBox" type="text" />
-                        <span id="fontBildAge"></span> 
+                        <span id="fontBildAge"></span>
                     </div>
                     <div class="inputMindre">
                         <span>Förnamn:</span>
                         <input id="firstNameBox" name="title" type="text" />
-                        <div id="fontBildName"></div> 
+                        <div id="fontBildName"></div>
                     </div>
                     <div class="inputMindre">
                         <span>Efternamn:</span>
                         <input id="lastNameBox" name="title" type="text" />
-                        <div id="fontBildLastName"></span>
-                    </div>
+                        <div id="fontBildLastName">
+                            </span>
+                        </div>
                 </fieldset>
             </form>
-            <button id="continuebutton">Fortsätt</button>
+            <button id="continuebutton" onsubmit="checkRegistration()">Fortsätt</button>
+            <div id="confirmMessage">
+                <div>
+                    <span><h4>Email:</h4></span>
+                    <span></span>
+                </div>
+                <div>
+                    <span><h4>Ålder:</h4></span>
+                    <span></span>
+                </div>
+                <div>
+                    <span><h4>Namn:</h4></span>
+                    <span></span>
+                </div>
+                <div>
+                    <span><h4>Efternamn:</h4></span>
+                    <span></span>
+                </div>
+            </div>
+            </div>
+            <div id="footer">
+            </div>
+            <script src="../script/jquery.js"></script>
+            <script src="../script/validering.js"></script>
+            <script src="../script/slidemenu.js"></script>
         </div>
-        <div id="footer">
-        </div>
-        <script src="../script/jquery.js"></script>
-        <script src="../script/validering.js"></script>
-        <script src="../script/slidemenu.js"></script>
-    </div>
 </body>
 
 </html>

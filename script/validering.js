@@ -5,14 +5,13 @@ $(document).ready(function() {
     var lastCheck = /^[a-öA-Ö]+$/;
 
 
-
     $("#ageBox").blur(function() {
         if (((ageCheck.test($("#ageBox").val())) === true)) {
             $("#ageBox").css({"border":"2px solid green"});
         }
         else {
             $("#ageBox").css({"border":"2px solid red"});
-            $("#fontBildAge").append("<i id='postnumbertriangle' class='fa fa-exclamation-triangle'></i>")
+            /*$("#fontBildAge").append("<i id='postnumbertriangle' class='fa fa-exclamation-triangle'></i>")*/
         }
     });
     $("#emailBox").blur(function() {
@@ -40,3 +39,4 @@ $(document).ready(function() {
         }
     });
 });
+
