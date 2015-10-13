@@ -298,26 +298,20 @@ table {
 	overflow: hidden;
 }
 
-<<<<<<< HEAD
 #map {
 	border: 1px solid black;
 }
 
-=======
 .divoverflow li {
 	display: inline-block;
 }
 
 
-a{
-	
-}
 #map {
 	border:1px solid black;
 }
 
 
->>>>>>> 9b35965b337215a8ef0b53c0dc6d4a1d6a5c243e
 .galleribilder {
 	width: 40%;
 	background-size: contain;
@@ -326,11 +320,12 @@ a{
 	margin: 10px;
 }
 
+
 .gallerixodia1 {
 	width: 30%;
 	margin: 10px;
 }
-<<<<<<< HEAD
+
 
 #faqtext {
 	text-align: center;
@@ -339,7 +334,6 @@ a{
 .gamesUl p {
 	margin:5px 0px 20px 0px;
 }
-=======
 
 form span{
 	display:inline;
@@ -352,4 +346,12 @@ form input{
 	margin-right:auto;
 	margin-bottom:10px;
 }
->>>>>>> 9b35965b337215a8ef0b53c0dc6d4a1d6a5c243e
+.inputMindre {
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#postnumbertriangle {
+	display:inline;
+}
