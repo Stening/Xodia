@@ -189,6 +189,11 @@ table {
 	background-repeat: no-repeat;
 	text-align: center;
 }
+#navigation span {
+	font-family:"passionone";
+	text-align: center;
+	font-size:120%;
+}
 
 #navigation {
 	font-family:"passionone";
@@ -229,7 +234,6 @@ table {
 	font-size: 150%;
 	padding: 15px;
 }
-
 
 #navigationrow1 {
 	display: inline-block;
@@ -281,6 +285,7 @@ table {
 	margin: 10px;
 	border-radius: 80px;
 	border: 14px solid gray;
+	margin-top:40px;
 }
 
 #csgobilden {
@@ -320,6 +325,7 @@ table {
 
 #map {
 	border: 1px solid black;
+	overflow-x:scroll;
 }
 
 
@@ -397,6 +403,8 @@ form input{
 	background-color: #FF6A33;
 	border-radius: 15px;
 }
+
+
 /*dropdown menu*/
 
 
@@ -410,7 +418,7 @@ form input{
 	margin-top:40px;
 }
 #content h2{
-	font-size:200%;
+	font-size:250%;
 	font-family:"orbitron";
 	text-shadow: 2px 6px 5px rgba(0,0,0,0.5);
 	margin-bottom:40px;
@@ -424,16 +432,42 @@ form input{
 	margin-top:20px;
 }
 
+.gamesUl{
+	display:block;
+	
+}
 
 
+.registreringbutton{
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:10%;
+	display:block;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin-bottom:40px;
+	transition:background-color 0.5s;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
 
 
-
-
-
-
+.registreringbutton:hover{
+	background-color: #FF6A33;
+}
+#startsidatext p {
+	max-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 /*content*/
+
+
 
 /*Startsida*/
 #bracketsimg{
@@ -443,16 +477,11 @@ form input{
 	height:auto;
 	width:70%;
 	border-radius:10px;
+	margin-bottom:50px;
 }
 #bracketdesc{
 	margin-bottom:10px;
 	margin-top:10px;
 	font-weight:bold;
 }
-
-
-
-
-
-
 /*Startsida*/

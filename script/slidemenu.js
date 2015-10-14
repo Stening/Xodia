@@ -1,11 +1,10 @@
 $(document).ready( function(){
+    console.log($( document ).width())
     var over = true;
     $("#galleributton, #dropdownmenu").mouseover(function() {
-        if (over === true) {
+        if ((over === true) && ($( document ).width() > 890)) {
             over = false;
             $("#dropdownmenu").slideDown("slow", function() {
-                //over = false;
-                console.log("test3");
             });
         }
     });
@@ -14,7 +13,7 @@ $(document).ready( function(){
 
 
     $("#gallerimenu").mouseleave(function() {
-        if (over === false) {
+        if ((over === false) && ($( document ).width() > 890)) {
             setTimeout(function() {
                 $("#dropdownmenu").slideUp("slow");
                 over = true;
