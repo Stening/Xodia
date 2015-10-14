@@ -43,7 +43,7 @@
         </div>
         <div id="content">
             <h1 class="gamesHeader">Kontakt</h1>
-            <form action="POST">
+            <form>
                 <fieldset>
                     <legend align="center">Information om dig</legend>
                     <div class="inputMindre">
@@ -58,43 +58,50 @@
                     </div>
                     <div class="inputMindre">
                         <span>Förnamn:</span>
-                        <input id="firstNameBox" name="title" type="text" />
+                        <input id="firstNameBox" type="text" />
                         <div id="fontBildName"></div>
                     </div>
                     <div class="inputMindre">
                         <span>Efternamn:</span>
-                        <input id="lastNameBox" name="title" type="text" />
+                        <input id="lastNameBox" type="text" />
                         <div id="fontBildLastName">
                             </span>
                         </div>
                 </fieldset>
             </form>
-            <button id="continuebutton" onsubmit="checkRegistration()">Fortsätt</button>
-            <div id="confirmMessage">
-                <div>
-                    <span><h4>Email:</h4></span>
-                    <span></span>
+            <button id="continuebutton">Fortsätt</button>
+            <div id="confirmMessage" class="overlay">
+                <div class="popup">
+                    <form id="popupForm">
+                        <div>
+                            <span class="popupLeft"><h4>Email: </h4></span>
+                            <span id="emailForm" name="email"></span>
+                        </div>
+                        <div>
+                            <span class="popupLeft"><h4>Ålder: </h4></span>
+                            <span id="ageForm" name="age"></span>
+                        </div>
+                        <div>
+                            <span class="popupLeft"><h4>Namn: </h4></span>
+                            <span id="nameForm" name="name"></span>
+                        </div>
+                        <div>
+                            <span class="popupLeft"><h4>Efternamn: </h4></span>
+                            <span id="lastNameForm" name="lastname"></span>
+                        </div>
+                    </form>
+                    <div id="knappdiv">
+                        <button id="tillbaka">Tillbaka</button>
+                        <button id="betala">Genomförköp</button>
+                    </div>
                 </div>
-                <div>
-                    <span><h4>Ålder:</h4></span>
-                    <span></span>
-                </div>
-                <div>
-                    <span><h4>Namn:</h4></span>
-                    <span></span>
-                </div>
-                <div>
-                    <span><h4>Efternamn:</h4></span>
-                    <span></span>
-                </div>
-            </div>
             </div>
             <div id="footer">
             </div>
             <script src="../script/jquery.js"></script>
             <script src="../script/validering.js"></script>
             <script src="../script/slidemenu.js"></script>
-        </div>
+            </div>
 </body>
 
 </html>
