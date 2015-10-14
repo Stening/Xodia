@@ -190,11 +190,6 @@ table {
 	background-repeat: no-repeat;
 	text-align: center;
 }
-#navigation span {
-	font-family:"passionone";
-	text-align: center;
-	font-size:120%;
-}
 
 #navigation {
 	font-family: "passionone";
@@ -285,7 +280,6 @@ table {
 	margin: 10px;
 	border-radius: 80px;
 	border: 14px solid gray;
-	margin-top:40px;
 }
 
 #csgobilden {
@@ -323,19 +317,21 @@ table {
 }
 
 #map {
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-image:url(../pics/xodiautanplatser.png);
-	overflow-x:scroll;
-	margin-bottom:50px;
+	border: 1px solid black;
 }
 
 .divoverflow li {
 	display: inline-block;
 }
 
+<<<<<<< HEAD
 
 
+=======
+#map {
+	border: 1px solid black;
+}
+>>>>>>> 16f1ddaf14edbd0abdd5bb4aab6153926d7c40e1
 
 .galleribilder {
 	width: 40%;
@@ -413,29 +409,12 @@ form input {
 
 /*content*/
 
-
 #content h1 {
 	font-size: 400%;
 	font-family: "orbitron";
 	text-shadow: 2px 6px 5px rgba(0, 0, 0, 0.8);
 	margin-bottom: 80px;
 	margin-top: 40px;
-
-}
-#content h1{
-	font-size:400%;
-	font-family:"orbitron";
-	text-shadow: 2px 6px 5px rgba(0,0,0,0.8);
-	margin-bottom:80px;
-	margin-top:40px;
-}
-#content h2{
-	font-size:250%;
-	font-family:"orbitron";
-	text-shadow: 2px 6px 5px rgba(0,0,0,0.5);
-	margin-bottom:40px;
-	
-
 }
 
 #content h2 {
@@ -444,7 +423,6 @@ form input {
 	text-shadow: 2px 6px 5px rgba(0, 0, 0, 0.5);
 	margin-bottom: 40px;
 }
-
 
 #content h3 {
 	font-size: 130%;
@@ -469,53 +447,6 @@ form input {
 	border-radius: 10px;
 }
 
-.gamesUl{
-	display:block;
-	
-}
-
-
-.registreringbutton{
-	font-family:"electrolize";
-	margin-right:auto;
-	margin-left:auto;
-	width:10%;
-	display:block;
-	text-decoration:none;
-	color:black;
-	background-color: #FF3801;
-	padding:5px;
-	margin-bottom:40px;
-	transition:background-color 0.5s;
-	border:1px solid black;
-	border-radius:5px;
-	box-shadow: 5px 4px 5px black;
-}
-
-
-.registreringbutton:hover{
-	background-color: #FF6A33;
-}
-#startsidatext p {
-	max-width:400px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-#faqtext p {
-	max-width:600px;
-	margin-left:auto;
-	margin-right:auto;
-}
-#faqtext h3 {
-	max-width:600px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-/*content*/
-
-
 #bracketdesc {
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -523,11 +454,11 @@ form input {
 }
 
 
-
 /*Min popup ruta till kontaktformuläret*/
 
 
 /*#confirmMessage {
+<<<<<<< HEAD
 =======
 /*Startsida*/
 #bracketsimg{
@@ -549,6 +480,16 @@ form input {
 
 /*Min popup ruta till kontaktformuläret*/
 
+=======
+	border:1px solid black;
+	display:block;
+	position:absolute;
+	left:37%;
+	top:37%;
+	width:26%;
+	background-color:#C6D9E1;
+}*/
+>>>>>>> 16f1ddaf14edbd0abdd5bb4aab6153926d7c40e1
 
 #confirmMessage div {
 	display:block;
@@ -583,6 +524,7 @@ form input {
 	
 }
 #emailForm {
+	width:300px
 
 	
 }
@@ -594,7 +536,14 @@ form input {
 
 	
 }
+<<<<<<< HEAD
 
 #lastNameForm {
 }
 
+=======
+#lastNameForm {
+
+	
+}
+>>>>>>> 16f1ddaf14edbd0abdd5bb4aab6153926d7c40e1
