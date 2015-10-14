@@ -68,11 +68,11 @@ var takenToggle = false;
                             box.fillStyle = "black";
                             box.rect(xstart, ystart, 30, 30);
                             box.lineWidth = 2;
-                            box.fillStyle = "red";
+                            box.fillStyle = "orange";
                             box.fillRect(xstart, ystart, 30, 30);
                             box.fillStyle = "black";
-                            box.font = "14pt Arial";
-                            box.fillText(boxnumberid, xstart + 5, ystart + 20);
+                            box.font = "12pt Arial";
+                            box.fillText(boxnumberid, xstart + 2, ystart + 20);
                             box.strokeStyle = 'black';
                             box.stroke();
                             boxnumberid += 1;
@@ -89,19 +89,19 @@ var takenToggle = false;
                 box.fillStyle = "green";
                 box.fillRect(xstart, ystart, 30, 30);
                 box.fillStyle = "black";
-                box.font = "14pt Arial";
-                box.fillText(boxnumberid, xstart + 5, ystart + 20);
+                box.font = "12pt Arial";
+                box.fillText(boxnumberid, xstart + 2, ystart + 20);
                 box.strokeStyle = 'black';
                 box.stroke();
                 boxnumberid += 1;
             }
             if (downorright === "right") {
-                xstart += 35;
+                xstart += 30;
                 ystart += 0;
             }
             else if (downorright === "down") {
                 xstart += 0;
-                ystart += 35;
+                ystart += 30;
             }
         }
     }
@@ -109,14 +109,26 @@ var takenToggle = false;
 
 
     function generateAll() {
-        generateseatrow(100, 30, "right", 6);
-        generateseatrow(100, 60, "right", 6);
-        generateseatrow(200, 200, "right", 5);
+        generateseatrow(150, 130, "right", 5);
+        generateseatrow(150, 160, "right", 5);
         generateseatrow(200, 250, "right", 5);
-        generateseatrow(200, 300, "right", 7);
-        generateseatrow(200, 350, "right", 7);
-
-
+        generateseatrow(200, 300, "right", 6);
+        generateseatrow(200, 330, "right", 6);
+        generateseatrow(180, 390, "right", 7);
+        generateseatrow(180, 420, "right", 7);
+        generateseatrow(70, 300, "down", 6);
+        generateseatrow(100, 300, "down", 6);
+        generateseatrow(180, 500, "right", 9);
+        generateseatrow(180, 530, "right", 9);
+        generateseatrow(180, 580, "right", 12);
+        generateseatrow(180, 610, "right", 12);
+        generateseatrow(565, 500, "right", 12);
+        generateseatrow(900, 550, "down", 3);
+        generateseatrow(590, 570, "right", 8);
+        generateseatrow(590, 600, "right", 8);
+        
+        
+        
     }
     updateSeats.onclick = function() {
         boxnumberid = 1;
@@ -153,11 +165,11 @@ var takenToggle = false;
                         tempBox.fillStyle = "black";
                         tempBox.rect(boxes[i][0][0], boxes[i][0][1], 30, 30);
                         tempBox.lineWidth = 2;
-                        tempBox.fillStyle = "red";
+                        tempBox.fillStyle = "orange";
                         tempBox.fillRect(boxes[i][0][0], boxes[i][0][1], 30, 30);
                         tempBox.fillStyle = "black";
-                        tempBox.font = "14pt Arial";
-                        tempBox.fillText(boxes[i][4], boxes[i][0][0] + 5, boxes[i][0][1] + 20);
+                        tempBox.font = "12pt Arial";
+                        tempBox.fillText(boxes[i][4], boxes[i][0][0] + 2, boxes[i][0][1] + 20);
                         tempBox.strokeStyle = 'black';
                         tempBox.stroke();
                     }

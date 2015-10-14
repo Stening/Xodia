@@ -323,8 +323,11 @@ table {
 }
 
 #map {
-	border: 1px solid black;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image:url(../pics/xodiautanplatser.png);
 	overflow-x:scroll;
+	margin-bottom:50px;
 }
 
 .divoverflow li {
@@ -332,9 +335,6 @@ table {
 }
 
 
-#map {
-	border:1px solid black;
-}
 
 .galleribilder {
 	width: 40%;
@@ -467,6 +467,17 @@ form input{
 	margin-right:auto;
 }
 
+#faqtext p {
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#faqtext h3 {
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 /*content*/
 
 
@@ -486,9 +497,9 @@ form input{
 	margin-top:10px;
 	font-weight:bold;
 }
-<<<<<<< HEAD
+
 /*Startsida*/
-=======
+
 /*Min popup ruta till kontaktformuläret*/
 #confirmMessage {
 	border:1px solid black;
@@ -504,4 +515,3 @@ form input{
 	display:block;
 	clear:both;
 }
->>>>>>> 43c129370b13c76eb44668f9bfe13fe1295f0805
