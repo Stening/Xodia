@@ -48,7 +48,31 @@ table {
 	border-spacing: 0;
 }
 /* End of "Css reset" */
+@font-face{
+	font-family: 'hammersmith';
+  	src: url('fonts/HammersmithOne-Regular.ttf');
+}
+@font-face{
+	font-family: 'passionone';
+  	src: url('fonts/PassionOne-Regular.ttf');
+}
 
+@font-face{
+	font-family: 'audiowide';
+  	src: url('fonts/Audiowide-Regular.ttf');
+}
+@font-face{
+	font-family: 'electrolize';
+  	src: url('fonts/Electrolize-Regular.ttf');
+}
+@font-face{
+	font-family: 'orbitron';
+  	src: url('fonts/Orbitron-Regular.ttf');
+}
+@font-face{
+	font-family: 'specialelite';
+  	src: url('fonts/SpecialElite.ttf');
+}
 
 /*header*/
 
@@ -68,6 +92,23 @@ table {
 
 
 
+/*container*/
+#container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: auto;
+	max-width: 960px;
+	background-color: rgba(50, 71, 89, 0.1);
+	overflow: hidden;
+}
+
+/*container*/
+
+
+
+
 /*navigation*/
 #navigation{
 	text-align:center;
@@ -77,31 +118,29 @@ table {
 	text-align:center;
 
 }
-#navigation li li{
 
-}
 
-#navigation li li{
-		border:1px solid black;
-		background-color:#E16C59;
-		text-decoration:none;
-		color:black;
-		display:inline-block;
-		width:auto;
-		border-radius:10px;
-		margin-left: auto;
-    	margin-right: auto;
+#navigation li li {
+	border: 1px solid black;
+	background-color: #FF3801;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	width: auto;
+	border-radius: 15px;
+	box-shadow: 5px 4px 5px black;
+	
 }
 
 #navigation a{
-	    min-width:80px;
+	text-align:center;
+	    min-width:40px;
 		text-decoration:none;
 		color:black;
 		width:auto;
-		height:20px;
+		height:40px;
 		display:block;
-		font-size:100%;
-		padding:8px;
+		padding:6px;
 }
 
 #navigationrow1{
@@ -118,4 +157,152 @@ table {
 
 }
 
+#navigation span{
+	font-size:150%;
+	text-align:center;
+	font-family:"passionone";
+	
+}
 /*navigation*
+
+
+
+
+/*bookingmap*/
+#map {
+	border:1px solid black;
+}
+/*bookingmap*/
+
+
+
+
+#dropdownmenu{
+	display:none;
+}
+
+/*content*/
+#content h1{
+	font-size:200%;
+	font-family:"orbitron";
+	text-shadow: 2px 6px 5px rgba(0,0,0,0.8);
+	margin-bottom:50px;
+	margin-top:20px;
+	line-height:1.5;
+}
+#content h2{
+	font-size:150%;
+	font-family:"orbitron";
+	text-shadow: 2px 6px 5px rgba(0,0,0,0.5);
+	margin-bottom:40px;
+}
+
+#content h3{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:100%;
+	font-family:"orbitron";
+	text-shadow: 2px 6px 5px rgba(0,0,0,0.5);
+	margin-bottom:20px;
+	margin-top:20px;
+	max-width:60%;
+}
+
+.registreringbutton{
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:40%;
+	display:block;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin-bottom:40px;
+	transition:background-color 0.5s;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
+#content p{
+	margin-bottom:10px;
+}
+/*content*/
+
+
+
+/*Startsida*/
+#startsidatext p {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#bracketsimg{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	height:auto;
+	width:100%;
+	border-radius:10px;
+	margin-bottom:50px;
+}
+#bracketdesc{
+	margin-bottom:10px;
+	margin-top:10px;
+	font-weight:bold;
+}
+/*Startsida*/
+
+
+
+
+/*turneringar*/
+.gamesUl p {
+	margin:5px 0px 20px 0px;
+}
+/*turneringar*/
+
+
+
+/*turneringarbilder*/
+#starcraftbilden {
+	width: 65%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	border-radius: 80px;
+	border: 14px solid gray;
+	margin-top:40px;
+}
+
+#csgobilden {
+	width: 65%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	border-radius: 80px;
+	border: 14px solid gray;
+}
+
+#dota2bilden {
+	width: 65%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	border-radius: 80px;
+	border: 14px solid gray;
+}
+
+#hearthstonebilden {
+	width: 65%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	border-radius: 80px;
+	border: 14px solid gray;
+}
+/*turneringarbilder*/
