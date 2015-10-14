@@ -334,13 +334,8 @@ table {
 	display: inline-block;
 }
 
-<<<<<<< HEAD
 
-=======
-#map {
-	border: 1px solid black;
-}
->>>>>>> 4118b589d000513122cca500230df42d42c661e3
+
 
 .galleribilder {
 	width: 40%;
@@ -549,23 +544,11 @@ form input {
 	margin-top:10px;
 	font-weight:bold;
 }
-<<<<<<< HEAD
+/*startsida*/
 
-/*Startsida*/
 
-=======
-/*Startsida*/
->>>>>>> 4118b589d000513122cca500230df42d42c661e3
 /*Min popup ruta till kontaktformuläret*/
-#confirmMessage {
-	border:1px solid black;
-	display:block;
-	position:absolute;
-	left:37%;
-	top:37%;
-	width:26%;
-	background-color:#C6D9E1;
-}
+
 
 #confirmMessage div {
 	display:block;
@@ -611,8 +594,7 @@ form input {
 
 	
 }
-<<<<<<< HEAD
-=======
+
 #lastNameForm {
 }
->>>>>>> 4118b589d000513122cca500230df42d42c661e3
+
