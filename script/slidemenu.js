@@ -17,7 +17,7 @@ $(document).ready( function(){
             setTimeout(function() {
                 $("#dropdownmenu").slideUp("slow");
                 over = true;
-            },1000);
+            },200);
         }
     });
 });
