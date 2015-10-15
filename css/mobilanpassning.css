@@ -88,7 +88,7 @@ table {
 	text-align:center;
 }
 
-/*header*/
+
 
 
 
@@ -104,7 +104,7 @@ table {
 	overflow: hidden;
 }
 
-/*container*/
+
 
 
 
@@ -163,7 +163,7 @@ table {
 	font-family:"passionone";
 	
 }
-/*navigation*
+
 
 
 
@@ -172,7 +172,7 @@ table {
 #map {
 	border:1px solid black;
 }
-/*bookingmap*/
+
 
 
 
@@ -256,15 +256,8 @@ table {
 
 
 
-/*turneringar*/
-.gamesUl p {
-	margin:5px 0px 20px 0px;
-}
-/*turneringar*/
 
-
-
-/*turneringarbilder*/
+/*Turneringarbilder*/
 #starcraftbilden {
 	width: 65%;
 	background-size: contain;
@@ -305,4 +298,3 @@ table {
 	border-radius: 80px;
 	border: 14px solid gray;
 }
-/*turneringarbilder*/
