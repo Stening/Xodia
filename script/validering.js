@@ -38,7 +38,7 @@ $(document).ready(function() {
         }
     });
     $("#emailBox").blur(function(){
-        if (((emailCheck.test($("#emailBox").val())) === true && ($("#emailBox").val().length <= 33)))  {
+        if (((emailCheck.test($("#emailBox").val())) === true && ($("#emailBox").val().length <= 31)))  {
             
             $("#emailBox").css({
                 "border": "2px solid green"
