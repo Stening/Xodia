@@ -1,0 +1,499 @@
+
+/*  The Css reset part was made by Eric Meyer
+	http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	text-decoration:none;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background:url(../pics/background-body.jpg)no-repeat center fixed;
+	background-size:cover;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'hammersmith';
+	src: url('fonts/HammersmithOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'passionone';
+	src: url('fonts/PassionOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'audiowide';
+	src: url('fonts/Audiowide-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'electrolize';
+	src: url('fonts/Electrolize-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'orbitron';
+	src: url('fonts/Orbitron-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'specialelite';
+	src: url('fonts/SpecialElite.ttf');
+}
+
+/*Container*/
+
+#container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: auto;
+	max-width: 960px;
+	background-color: rgba(0, 0, 10, 0.50);
+	overflow: hidden;
+	border:1px solid #FF3804;
+	border-radius:10px;
+}
+
+/*Header*/
+
+#header {
+	background-position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../pics/xodiastora.jpg);
+	min-height: 300px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+/*Navigation*/
+
+#navigation {
+	font-family: "passionone";
+	display: block;
+	text-align: center;
+	font-size: 120%;
+}
+
+#navigation ul {
+	display: block;
+	width: auto;
+	margin-bottom: 3px;
+	margin-top: 5px;
+}
+
+#navigation li li {
+	margin: 5px;
+	border: 1px solid black;
+	background-color: #FF3801;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	width: auto;
+	border-radius: 15px;
+	box-shadow: 5px 4px 5px black;
+	transition: background-color, 0.5s;
+}
+
+#navigation li li:hover {
+	background-color: #FF6A33;
+}
+
+#navigation li a {
+	min-width: 100px;
+	text-decoration: none;
+	color: black;
+	width: auto;
+	display: block;
+	font-size: 150%;
+	padding: 15px;
+}
+
+#navigationrow1 {
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+}
+
+#navigationrow2 {
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+}
+#navigation span {
+	font-family:"passionone";
+	text-align: center;
+	font-size:120%;
+	color:black;
+}
+
+
+/*Textändringar*/
+
+p, h1, h2, h3,legend,span  {
+	color:white;
+}
+
+/*Turnering*/
+
+#starcraftbilden,#csgobilden,#dota2bilden,#hearthstonebilden{
+	width: 65%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+	border-radius: 80px;
+	border: 14px solid #C3D5E1;
+
+}
+.gamesUl p {
+	margin: 5px 0px 20px 0px;
+}
+
+.registreringbutton{
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:10%;
+	display:block;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin-bottom:40px;
+	transition:background-color 0.5s;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
+
+
+.registreringbutton:hover{
+	background-color: #FF6A33;
+}
+
+/*Bokningskarta*/
+
+#map {
+	display:block;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image:url(../pics/xodiautanplatser.png);
+	overflow:auto;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#resetstorage, #updateseats, #continuebutton{
+	font-weight:bold;
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:100px;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin:0px 30px 30px 30px;
+	transition:background-color 0.5s;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
+#resetstorage:hover, #updateseats:hover{
+background-color: #FF6A33;
+}
+
+/*Galleri*/
+
+.galleribilder {
+	width: 40%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10px;
+}
+
+.gallerixodia1 {
+	width: 30%;
+	margin: 10px;
+}
+
+/*FAQ*/
+
+#faqtext {
+	text-align: center;
+	line-height: 2;
+}
+
+/*Kontaktformuläret*/
+
+form span {
+	display: inline;
+	font-family: "hammersmith";
+}
+
+form input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.inputMindre {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*dropdown menu*/
+
+#dropdownmenu {
+	display: none;
+	line-height: 0;
+	position: absolute;
+	background-color: #FF3801;
+	border-radius: 15px;
+	box-shadow: 5px 4px 5px black;
+	border: 1px solid black;
+	transition: background-color 0.5s;
+}
+
+#dropdownmenu a {
+	transition: background-color 0.5s;
+	background-color: #FF3801;
+	border-radius: 15px;
+}
+
+#dropdownmenu a:hover {
+	transition: background-color 1s;
+	background-color: #FF6A33;
+	border-radius: 15px;
+}
+
+
+
+/*content*/
+
+#content h1 {
+	font-size: 400%;
+	font-family: "orbitron";
+	text-shadow: 2px 6px 5px rgba(0, 0, 0, 0.8);
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
+
+#content h2 {
+	font-size: 200%;
+	font-family: "orbitron";
+	text-shadow: 2px 6px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 40px;
+}
+
+#content h3 {
+	font-size: 130%;
+	font-family: "orbitron";
+	text-shadow: 2px 6px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+#content {
+
+	overflow:hidden;
+}
+
+
+/*Startsida*/
+
+#bracketsimg{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	height:auto;
+	width:70%;
+	border-radius:10px;
+	margin-bottom:50px;
+}
+#bracketdesc{
+	margin-bottom:10px;
+	margin-top:10px;
+	font-weight:bold;
+}
+
+
+/*Min popup ruta till kontaktformuläret*/
+
+
+#confirmMessage div {
+	display:block;
+	vertical-align:middle;
+	width:300px;
+
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+	border: 3px solid orange;
+	display:block;
+	background-color: #C6D9E1;
+	line-height:3;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	margin-top:320px;
+} 
+.popupLeft {
+	float:left
+	
+}
+#emailForm {
+	width:300px
+
+	
+}

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+   
+   /*Variablar som används i funktionen*/
+   
     var emailCheck = /^[A-Öa-ö0-9._%+-]+@[A-Za-z-0-9.-]+\.[A-Za-z]{2,6}$/;
     var ageCheck = /^[0-9]{1,3}$/;
     var nameCheck = /^[a-öA-Ö]{1,40}$/;
@@ -7,11 +10,18 @@ $(document).ready(function() {
     var ageApproved = false;
     var nameApproved = false;
     var lastNameApproved = false;
+    
+    /*Variablar som används i funktionen*/
+    
+    
+    
+    
+    /*Kollar igenom alla input fält om dom är true/false*/
 
-
-
-
-    /*När input fältet #ageBox tappar focus, */
+    /*När inputfältet tapar focus, så testas det jag skrivit in genom de olika RegExp:en och ser om det som kommer igenom är Sant eller Falskt*/
+    /*Om det blir sant så kommer inputfältet att ges en grön border som är 4px stor*/
+    /*Om det inte blir true,ge den en röd border som är 4px stor*/
+    
     $("#ageBox").blur(function() {
         if (((ageCheck.test($("#ageBox").val())) === true)) {
             $("#ageBox").css({
@@ -26,7 +36,6 @@ $(document).ready(function() {
             ageApproved = false;
         }
     });
-    /**/
     $("#emailBox").blur(function() {
         if (((emailCheck.test($("#emailBox").val())) === true)) {
             $("#emailBox").css({
@@ -74,21 +83,34 @@ $(document).ready(function() {
         }
     });
 
+    /*Kollar igenom alla rader input fält om dom är true/false*/
+    
+
+
+
+
+
+
+    
+    /*När man klickar på knappen med #continuebutton så kollar den om alla fälten är true,
+      om dom är de så kommer den att skriva ut display:block i cssn så att popup rutan kommer visas.*/
+    /**/
+
     $("#continuebutton").click(function() {
         if (lastNameApproved === true && nameApproved === true && emailApproved === true && ageApproved === true) {
             $("#confirmMessage").css({
                 "display": "block"
             });
-                $("#emailForm").empty();
-                $("#ageForm").empty();
-                $("#nameForm").empty();
-                $("#lastNameForm").empty();
-                
-                
-                $("#emailForm").append($("#emailBox").val());
-                $("#ageForm").append($("#ageBox").val());
-                $("#nameForm").append($("#firstNameBox").val());
-                $("#lastNameForm").append($("#lastNameBox").val());
+            $("#emailForm").empty();
+            $("#ageForm").empty();
+            $("#nameForm").empty();
+            $("#lastNameForm").empty();
+
+
+            $("#emailForm").append($("#emailBox").val());
+            $("#ageForm").append($("#ageBox").val());
+            $("#nameForm").append($("#firstNameBox").val());
+            $("#lastNameForm").append($("#lastNameBox").val());
         }
     });
     $("#tillbaka").click(function() {
@@ -97,7 +119,6 @@ $(document).ready(function() {
         });
     });
     $("#betala").click(function() {
-        $("#popupForm").submit()({
-        });
+        $("#popupForm").submit()({});
     });
 });

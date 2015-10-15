@@ -73,20 +73,31 @@ table {
 	font-family: 'specialelite';
   	src: url('fonts/SpecialElite.ttf');
 }
+p, h1, h2, h3,legend,span  {
+	color:white;
+}
+body {
+	line-height: 1;
+	background:url(../pics/background-body.jpg)no-repeat center fixed;
+	background-size:cover;
+}
+
+
 
 /*header*/
-
 #header{
 	display: block;
     margin-left: auto;
     margin-right: auto;
     background-position:center;
-	background-image:url(../pics/xodiastor.jpg);
+	background-image:url(../pics/xodiastora.jpg);
 	background-size:contain;
 	height:70px;
 	background-repeat:no-repeat;
 	text-align:center;
 }
+
+
 
 
 
@@ -100,9 +111,11 @@ table {
 	text-align: center;
 	width: auto;
 	max-width: 960px;
-	background-color: rgba(50, 71, 89, 0.1);
 	overflow: hidden;
+	background-color: rgba(50, 71, 89, );
 }
+
+
 
 
 
@@ -161,7 +174,12 @@ table {
 	font-size:150%;
 	text-align:center;
 	font-family:"passionone";
+	color:black;
 	
+}
+
+#dropdownmenu{
+	display:none;
 }
 
 
@@ -169,19 +187,40 @@ table {
 
 
 /*bookingmap*/
-#map {
+#resetstorage, #updateseats,  #continuebutton{
+	font-weight:bold;
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:100px;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin:0px 30px 30px 30px;
 	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
+
+#map {
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image:url(../pics/xodiautanplatser.png);
+	overflow:scroll;
+	margin-bottom:50px;
+	border: 1px solid black;
 }
 
 
 
 
+/*Content*/
 
-#dropdownmenu{
-	display:none;
+#content {
+
+	overflow:auto;
 }
-
-/*content*/
 #content h1{
 	font-size:200%;
 	font-family:"orbitron";
@@ -208,27 +247,17 @@ table {
 	max-width:60%;
 }
 
-.registreringbutton{
-	font-family:"electrolize";
-	margin-right:auto;
-	margin-left:auto;
-	width:40%;
-	display:block;
-	text-decoration:none;
-	color:black;
-	background-color: #FF3801;
-	padding:5px;
-	margin-bottom:40px;
-	transition:background-color 0.5s;
-	border:1px solid black;
-	border-radius:5px;
-	box-shadow: 5px 4px 5px black;
-}
+
 #content p{
 	margin-bottom:10px;
 }
-/*content*/
 
+
+/*galleribilder*/
+.gallerixodia1 {
+	width: 30%;
+	margin: 10px;
+}
 
 
 /*Startsida*/
@@ -251,50 +280,102 @@ table {
 	margin-top:10px;
 	font-weight:bold;
 }
-/*Startsida*/
 
 
 
 
 
-/*Turneringarbilder*/
-#starcraftbilden {
+
+
+/*turneringar*/
+.gamesUl p {
+	margin:5px 0px 20px 0px;
+}
+.registreringbutton{
+	font-family:"electrolize";
+	margin-right:auto;
+	margin-left:auto;
+	width:40%;
+	display:block;
+	text-decoration:none;
+	color:black;
+	background-color: #FF3801;
+	padding:5px;
+	margin-bottom:40px;
+	transition:background-color 0.5s;
+	border:1px solid black;
+	border-radius:5px;
+	box-shadow: 5px 4px 5px black;
+}
+
+
+
+/*turneringarbilder*/
+#starcraftbilden, #csgobilden, #dota2bilden, #hearthstonebilden {
+
 	width: 65%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 10px;
-	border-radius: 80px;
-	border: 14px solid gray;
+	border-radius: 40px;
+	border: 7px solid #C3D5E1;
 	margin-top:40px;
 }
 
-#csgobilden {
-	width: 65%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 10px;
-	border-radius: 80px;
-	border: 14px solid gray;
+
+/*formulär*/
+
+#emailForm {
+	width:300px;
+}
+form span {
+	display: inline;
+	font-family: "hammersmith";
 }
 
-#dota2bilden {
-	width: 65%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 10px;
-	border-radius: 80px;
-	border: 14px solid gray;
+form input {
+	display: block;
+	margin-bottom: 10px;
+}
+#lastNameBox, #firstNameBox, #emailBox, #ageBox{
+	margin-left:auto;
+	margin-right:auto;
+}
+.inputMindre {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#hearthstonebilden {
-	width: 65%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 10px;
-	border-radius: 80px;
-	border: 14px solid gray;
+#confirmMessage div {
+	display:block;
+	vertical-align:middle;
+	width:300px;
+
 }
+.popup {
+	border: 3px solid orange;
+	display:block;
+	background-color: #C6D9E1;
+	line-height:3;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	margin-top:320px;
+} 
+.popupLeft {
+	float:left
+	
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+
