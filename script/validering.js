@@ -15,13 +15,13 @@ $(document).ready(function() {
     $("#ageBox").blur(function() {
         if (((ageCheck.test($("#ageBox").val())) === true)) {
             $("#ageBox").css({
-                "border": "2px solid green"
+                "border": "4px solid green"
             });
             ageApproved = true;
         }
         else {
             $("#ageBox").css({
-                "border": "2px solid red"
+                "border": "4px solid red"
             });
             ageApproved = false;
         }
@@ -30,13 +30,13 @@ $(document).ready(function() {
     $("#emailBox").blur(function() {
         if (((emailCheck.test($("#emailBox").val())) === true)) {
             $("#emailBox").css({
-                "border": "2px solid green"
+                "border": "4px solid green"
             });
             emailApproved = true;
         }
         else {
             $("#emailBox").css({
-                "border": "2px solid red"
+                "border": "4px solid red"
             });
             emailApproved = false;
         }
@@ -45,14 +45,14 @@ $(document).ready(function() {
     $("#firstNameBox").blur(function() {
         if (((nameCheck.test($("#firstNameBox").val())) === true)) {
             $("#firstNameBox").css({
-                "border": "2px solid green"
+                "border": "4px solid green"
             });
 
             nameApproved = true;
         }
         else {
             $("#firstNameBox").css({
-                "border": "2px solid red"
+                "border": "4px solid red"
             });
 
             nameApproved = false;
@@ -62,14 +62,14 @@ $(document).ready(function() {
     $("#lastNameBox").blur(function() {
         if (((lastCheck.test($("#lastNameBox").val())) === true)) {
             $("#lastNameBox").css({
-                "border": "2px solid green"
+                "border": "4px solid green"
             });
 
             lastNameApproved = true;
         }
         else {
             $("#lastNameBox").css({
-                "border": "2px solid red"
+                "border": "4px solid red"
             });
 
             lastNameApproved = false;
