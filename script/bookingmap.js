@@ -1,6 +1,6 @@
 $(document).ready( function(){
 var map = document.getElementById("map");
-var resetCookie = document.getElementById("resetstorage");
+var resetStorage = document.getElementById("resetstorage");
 var updateSeats = document.getElementById("updateseats");
 var boxnumberid = 1;
 var boxes = {};
@@ -10,25 +10,42 @@ var clicked = false;
 var seatInfoStorage;
 var redBoxMade = false;
 var takenToggle = false;
+/*declaration of variables*/
 
 
 
 
+
+/*append seat info into localstorage*/
+
+/*this function checks if there is anything stored under the keyword of the input parameter*/
+/*if it is, then it gets it and stores it in a temp variable, then adds the new data from the second input parameter, then stores it all back in localstorage under the chosen keyword*/
+/*if there is nothing in the keyword, then it just declares it as an empty array and pushes the new data into it and stores it under the chosen keyword*/
     function appendToStorage(name, newData) {
         console.log(localStorage.getItem(name));
         if (localStorage.getItem(name) !== null && localStorage.getItem(name) !== "") {
             var oldData = JSON.parse(localStorage.getItem(name));
         }
         else {
-            oldData = [];
+            var oldData = [];
         }
         oldData.push(newData);
         localStorage.setItem(name, JSON.stringify(oldData));
     }
     
     
+/*append seat info into localstorage*/
     
     
+    
+
+
+
+
+/*check if seat is taken*/
+    
+    /*this function first checks if there is something in the keyword "seatInfoStorage" if there is, it goes through it and checks if it matches the input parameter and returns thrue or false */
+    /*if the SeatInfoStorage does not exist or is an empty string (localstorage can only store strings) the function simply returns false because then no seats have been taken*/
     function isSeatTaken(seatnumber) {
         console.log(localStorage.getItem(seatInfoStorage));
         if (localStorage.getItem(seatInfoStorage) !== null && localStorage.getItem(seatInfoStorage) !== "") {
@@ -45,11 +62,21 @@ var takenToggle = false;
             return false;
         }
     }
+/*check if seat is taken*/
+    
+    
+    
+    
+    
 
 
 
 
+/*generate 1 seatrow*/
 
+/*this function uses the object "boxes" to store all the 8 coordinates of the drawn boxes (2 for every corner of a box)*/
+/*as it generates boxes it also checks if the seat it is about to create is taken. if so, it generates a box of a different color*/
+/*the input parameters is pretty self-explanatory, you input the x and y start of the row, if the row goes right or down, and the total number of seats*/
     function generateseatrow(xstart, ystart, downorright, numberofseats) {
         for (var i = 0; i < numberofseats; i++) {
             redBoxMade = false;
@@ -105,9 +132,20 @@ var takenToggle = false;
             }
         }
     }
+/*generate 1 seatrow*/
 
 
 
+
+
+
+
+
+
+/*generate all the rows!*/
+
+/*here i "draw" the whole thing manually.*/
+/*i just call the function as many times as i need seat rows, this system may be a bit clunky but i found it really easy to use*/
     function generateAll() {
         generateseatrow(150, 130, "right", 5);
         generateseatrow(150, 160, "right", 5);
@@ -126,25 +164,61 @@ var takenToggle = false;
         generateseatrow(900, 550, "down", 3);
         generateseatrow(590, 570, "right", 8);
         generateseatrow(590, 600, "right", 8);
-        
-        
-        
     }
+    
+    /*here i call the function at least once every time the document loads*/
+    generateAll();
+
+/*generate all the rows!*/
+
+
+
+
+
+
+
+
+
+/*update seats button click*/
+
+    /*this function resets the seatnumber counter and calls the function that generates all the seats*/
     updateSeats.onclick = function() {
         boxnumberid = 1;
         generateAll();
     };
-    generateAll();
+/*update seats button click*/
 
 
-    resetCookie.onclick = function() {
+
+
+
+
+
+
+/*reset storage button click*/
+
+/*when you click on the button "rensa valda platser" the function sets the keyword "seatInfo" to an empty array, then resets the seat number counter and then regenerates all the seats*/
+    resetStorage.onclick = function() {
         localStorage.setItem(seatInfoStorage, []);
         boxnumberid = 1;
         generateAll();
     };
-
-    console.log(boxes);
-    //here i check where the mouse is on the canvas and what seat is selected
+/*reset storage button click*/
+    
+    
+    
+    
+    
+    
+    
+    
+    /*click on canvas function*/
+    
+    /*this function checks where on the canvas the user clicks*/
+    /*every time the user clicks on the canvas the function goes through the object wich all the coordinates are stored, and checks if the pointer is within any of them*/
+    /*if it is it checks if the clicked seat is taken or not, if it is not then an orange box is drawn at the spot of the clicked green box, replacing it*/
+    /*the id of the clicked box is also appended into the localstorage so it and other functions know that it is now taken*/
+    /*the funcion only draws a new box and appends to localstorage if the seat is not taken*/
     map.addEventListener("mousedown", function(e) {
         var totalOffsetX = 0;
         var totalOffsetY = 0;
@@ -187,4 +261,9 @@ var takenToggle = false;
         }
         clicked = false;
     });
+/*click on canvas function*/
+
+
+
+
 });
