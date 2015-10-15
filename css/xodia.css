@@ -363,10 +363,15 @@ background-color: #FF6A33;
 }
 
 /*Kontaktformuläret*/
-
-form span {
+form legend{
+	font-size:120%;
+	font-family:"orbitron";
+	margin-bottom:20px;
+}
+form p, div {
 	display: inline;
 	font-family: "hammersmith";
+	color:white;
 }
 
 form input {
@@ -479,14 +484,15 @@ form input {
 }
 
 .popup {
-	border: 3px solid orange;
+	border: 3px solid #FF3801;
 	display:block;
-	background-color: #C6D9E1;
+	background-color: black;
 	line-height:3;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:left;
 	margin-top:320px;
+	border-radius:15px;
 } 
 .popupLeft {
 	float:left

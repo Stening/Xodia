@@ -10,6 +10,7 @@ $(document).ready(function() {
     var ageApproved = false;
     var nameApproved = false;
     var lastNameApproved = false;
+    var takenSeats = [];
     
     /*Variablar som används i funktionen*/
     
@@ -17,7 +18,7 @@ $(document).ready(function() {
     
     
     /*Kollar igenom alla input fält om dom är true/false*/
-
+    
     /*När inputfältet tapar focus, så testas det jag skrivit in genom de olika RegExp:en och ser om det som kommer igenom är Sant eller Falskt*/
     /*Om det blir sant så kommer inputfältet att ges en grön border som är 4px stor*/
     /*Om det inte blir true,ge den en röd border som är 4px stor*/
@@ -71,7 +72,6 @@ $(document).ready(function() {
             $("#lastNameBox").css({
                 "border": "4px solid green"
             });
-
             lastNameApproved = true;
         }
         else {
@@ -82,16 +82,39 @@ $(document).ready(function() {
             lastNameApproved = false;
         }
     });
-
     /*Kollar igenom alla rader input fält om dom är true/false*/
-    
+
+
+
+
+/*append seat info into localstorage(imported from bookingmap.js)*/
+
+    /*this function checks if there is anything stored under the keyword of the input parameter*/
+    /*if it is, then it gets it and stores it in a temp variable, then adds the new data from the second input parameter, then stores it all back in localstorage under the chosen keyword*/
+    /*if there is nothing in the keyword, then it just declares it as an empty array and pushes the new data into it and stores it under the chosen keyword*/
+    function appendToStorage(name, newData) {
+        console.log(localStorage.getItem(name));
+        if (localStorage.getItem(name) !== null && localStorage.getItem(name) !== "") {
+            var oldData = JSON.parse(localStorage.getItem(name));
+            console.log(oldData);
+        }
+        else {
+            var oldData = [];
+            console.log(oldData);
+        }
+        for(var i=0; i< newData.length; i++){
+        oldData.push(newData[i]);
+        console.log(oldData);
+        console.log((JSON.parse(localStorage.getItem("chosen"))));
+        }
+        localStorage.setItem(name, JSON.stringify(oldData));
+    }
+    /*append seat info into localstorage(imported from bookingmap.js)*/
 
 
 
 
 
-
-    
     /*När man klickar på knappen med #continuebutton så kollar den om alla fälten är true,
       om dom är de så kommer den att skriva ut display:block i cssn så att popup rutan kommer visas.*/
     /**/
@@ -105,12 +128,19 @@ $(document).ready(function() {
             $("#ageForm").empty();
             $("#nameForm").empty();
             $("#lastNameForm").empty();
-
-
+            $("#chosenSeatsForm").empty();
+            
             $("#emailForm").append($("#emailBox").val());
             $("#ageForm").append($("#ageBox").val());
             $("#nameForm").append($("#firstNameBox").val());
             $("#lastNameForm").append($("#lastNameBox").val());
+            for (var i = 0; i < JSON.parse(localStorage.getItem("chosen")).length; i++) {
+            console.log(localStorage.getItem("chosen"));
+                $("#chosenSeatsForm").append(JSON.parse(localStorage.getItem("chosen"))[i]);
+                $("#chosenSeatsForm").append("  ");
+            }
+            
+            console.log(JSON.parse(localStorage.getItem("chosen")));
         }
     });
     $("#tillbaka").click(function() {
@@ -119,6 +149,15 @@ $(document).ready(function() {
         });
     });
     $("#betala").click(function() {
-        $("#popupForm").submit()({});
+        $("#popupForm").submit();
+        
+        var test;
+        test = (JSON.parse(localStorage.getItem("chosen")));
+        console.log(localStorage.getItem("chosen"));
+        console.log(test);
+        appendToStorage("taken", (JSON.parse(localStorage.getItem("chosen"))));
+        localStorage.setItem("chosen", "");
     });
 });
+
+
