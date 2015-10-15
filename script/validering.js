@@ -47,14 +47,12 @@ $(document).ready(function() {
             $("#firstNameBox").css({
                 "border": "2px solid green"
             });
-
             nameApproved = true;
         }
         else {
             $("#firstNameBox").css({
                 "border": "2px solid red"
             });
-
             nameApproved = false;
         }
     });
