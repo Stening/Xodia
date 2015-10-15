@@ -4,8 +4,8 @@ $(document).ready(function() {
    
     var emailCheck = /^[A-Öa-ö0-9._%+-]+@[A-Za-z-0-9.-]+\.[A-Za-z]{2,6}$/;
     var ageCheck = /^[0-9]{1,3}$/;
-    var nameCheck = /^[a-öA-Ö]{1,40}$/;
-    var lastCheck = /^[a-öA-Ö]+$/;
+    var nameCheck = /^[a-öA-Ö]{1,33}$/;
+    var lastCheck = /^[a-öA-Ö]{1,33}$/;
     var emailApproved = false;
     var ageApproved = false;
     var nameApproved = false;
@@ -14,39 +14,41 @@ $(document).ready(function() {
     
     /*Variablar som används i funktionen*/
     
-    
+    var emailLength = $("#emailBox").val();
     
     
     /*Kollar igenom alla input fält om dom är true/false*/
-    
+
     /*När inputfältet tapar focus, så testas det jag skrivit in genom de olika RegExp:en och ser om det som kommer igenom är Sant eller Falskt*/
     /*Om det blir sant så kommer inputfältet att ges en grön border som är 4px stor*/
     /*Om det inte blir true,ge den en röd border som är 4px stor*/
     
     $("#ageBox").blur(function() {
-        if (((ageCheck.test($("#ageBox").val())) === true)) {
+        if (((ageCheck.test($("#ageBox").val())) === true )) {
             $("#ageBox").css({
-                "border": "4px solid green"
+                "border": "2px solid green"
             });
             ageApproved = true;
         }
         else {
             $("#ageBox").css({
-                "border": "4px solid red"
+                "border": "2px solid red"
             });
             ageApproved = false;
         }
     });
-    $("#emailBox").blur(function() {
-        if (((emailCheck.test($("#emailBox").val())) === true)) {
+    $("#emailBox").blur(function(){
+        if (((emailCheck.test($("#emailBox").val())) === true && ($("#emailBox").val().length <= 31)))  {
+            
             $("#emailBox").css({
-                "border": "4px solid green"
+                "border": "2px solid green"
             });
             emailApproved = true;
+
         }
         else {
             $("#emailBox").css({
-                "border": "4px solid red"
+                "border": "2px solid red"
             });
             emailApproved = false;
         }
@@ -55,13 +57,13 @@ $(document).ready(function() {
     $("#firstNameBox").blur(function() {
         if (((nameCheck.test($("#firstNameBox").val())) === true)) {
             $("#firstNameBox").css({
-                "border": "4px solid green"
+                "border": "2px solid green"
             });
             nameApproved = true;
         }
         else {
             $("#firstNameBox").css({
-                "border": "4px solid red"
+                "border": "2px solid red"
             });
             nameApproved = false;
         }
@@ -70,19 +72,21 @@ $(document).ready(function() {
     $("#lastNameBox").blur(function() {
         if (((lastCheck.test($("#lastNameBox").val())) === true)) {
             $("#lastNameBox").css({
-                "border": "4px solid green"
+                "border": "2px solid green"
             });
             lastNameApproved = true;
         }
         else {
             $("#lastNameBox").css({
-                "border": "4px solid red"
+                "border": "2px solid red"
             });
 
             lastNameApproved = false;
         }
     });
     /*Kollar igenom alla rader input fält om dom är true/false*/
+
+
 
 
 
@@ -115,10 +119,19 @@ $(document).ready(function() {
 
 
 
-    /*När man klickar på knappen med #continuebutton så kollar den om alla fälten är true,
-      om dom är de så kommer den att skriva ut display:block i cssn så att popup rutan kommer visas.*/
-    /**/
 
+
+    /*Klickar på knappen Fortsätt så kommer popupen dyka upp och där kan du välja om du vill tillbaka eller skicka det du skrivit*/
+    
+    /*När man klickar på knappen med #continuebutton så kollar den om variabel är true,
+      om dom är de så kommer den att skriva ut display:block i cssn så att popup rutan kommer visas.*/
+      
+    /*Om den inte är true, kommer ingen popup att dyka upp tills du gjort så att alla variabler är true.*/
+    /*Sedan tömmer den "empty" inputfältet på information och lägger till "append" det nya*/
+    
+    /*Om man sedan väljer att gå tillbaka med #tillbaka knappen så kommer popupen att displaya:none,och popupen kommer stängas ner*/
+    /*Om istället väljer att klicka på knappen med #betala så kommer den att ladda om sidan (skicka formuläret)*/
+   
     $("#continuebutton").click(function() {
         if (lastNameApproved === true && nameApproved === true && emailApproved === true && ageApproved === true) {
             $("#confirmMessage").css({
@@ -159,5 +172,6 @@ $(document).ready(function() {
         localStorage.setItem("chosen", "");
     });
 });
+/*Klickar på knappen Fortsätt så kommer popupen dyka upp och där kan du välja om du vill tillbaka eller skicka det du skrivit*/
 
 
