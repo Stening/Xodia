@@ -481,7 +481,7 @@ form input {
 .popup {
 	border: 3px solid orange;
 	display:block;
-	background-color: #C6D9E1;
+	background-color: black;
 	line-height:3;
 	margin-left:auto;
 	margin-right:auto;
