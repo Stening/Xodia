@@ -176,7 +176,6 @@ var takenToggle = false;
                     else {
                         console.log("Seat number " + boxes[i][4] + " is already taken");
                     }
-
                     console.log("you clicked box number: " + boxes[i][4]);
                     console.log(localStorage.getItem(seatInfoStorage));
                     clicked = true;
